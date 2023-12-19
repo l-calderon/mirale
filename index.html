@@ -1,11 +1,147 @@
-!  <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+        <title>With love for ALE ❤️</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
 </head>
+<style>
+    :root {
+        --size: 100px;
+        --frames: 62;
+    }
+
+    html {
+        background-color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    .like {
+        display: block;
+        width: var(--size);
+        height: var(--size);
+        cursor: pointer;
+        border-radius: 999px;
+        overflow: visible;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .hearth {
+        background-image: url('https://assets.codepen.io/23500/Hashflag-AppleEvent.svg');
+        background-size: calc(var(--size) * var(--frames)) var(--size);
+        background-repeat: no-repeat;
+        background-position-x: calc(var(--size) * (var(--frames) * -1 + 2));
+        background-position-y: calc(var(--size) * 0.02);
+        width: var(--size);
+        height: var(--size);
+    }
+
+    .texto {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .padre {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    input:checked+.hearth {
+        animation: like 1s steps(calc(var(--frames) - 3));
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes like {
+        0% {
+            background-position-x: 0;
+        }
+
+        100% {
+            background-position-x: calc(var(--size) * (var(--frames) * -1 + 3));
+        }
+    }
+
+    @media (hover: hover) {
+        .like:hover {
+            background-color: #E1255E15;
+
+            .hearth {
+                background-position-x: calc(var(--size) * (var(--frames) * -1 + 1));
+            }
+        }
+    }
+</style>
+
 <body>
-  <h1>Prueba</h1>
+
+    <div class="padre">
+        <div class="texto">
+            BIENVENIDA, ALE 👩
+        </div>
+        <div>
+            <label class="like" onclick="redirectToPage()">
+                <input type="checkbox" />
+                <div class="hearth">
+            </label>
+        </div>
+    </div>
+
+    <div>
+        <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90" version="1.1">
+            <g class="heart-loader__group">
+              <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
+              <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+              <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+              <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+            </g>
+          </svg>
+    </div>
+
+    <div class="overlay">
+        <div style="text-align: center;">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <div>
+            Haz clic en el corazón
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage() {
+            setTimeout(function () {
+                // Cambia la URL a la que deseas redirigir
+                window.location.href = "inicio.html";
+            }, 1200); // 1200 milisegundos (corresponde a la duración de la animación y el retraso)
+        }
+    </script>
 </body>
+
 </html>
