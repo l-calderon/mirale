@@ -12,6 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/icono.png" />
+
 
 
     <!-- Additional CSS Files -->
@@ -98,6 +100,10 @@
             }
         }
     }
+
+    #audio {
+            pointer-events: none;
+        }
 </style>
 
 <body>
@@ -107,7 +113,7 @@
             BIENVENIDA, ALE 👩
         </div>
         <div>
-            <label class="like" onclick="redirectToPage()">
+            <label or="audio" class="like" onclick="playAudio();redirectToPage();">
                 <input type="checkbox" />
                 <div class="hearth">
             </label>
@@ -132,6 +138,8 @@
         <div>
             Haz clic en el corazón
         </div>
+        <audio id="audio" src="assets/images/hada.mp3"></audio>
+
     </div>
 
     <script>
@@ -139,7 +147,16 @@
             setTimeout(function () {
                 // Cambia la URL a la que deseas redirigir
                 window.location.href = "inicio.html";
-            }, 1200); // 1200 milisegundos (corresponde a la duración de la animación y el retraso)
+            }, 2000); // 1200 milisegundos (corresponde a la duración de la animación y el retraso)
+        }
+
+        function playAudio() {
+            var audio = document.getElementById("audio");
+
+            // Verifica si el audio está pausado y lo reproduce
+            if (audio.paused) {
+                audio.play();
+            }
         }
     </script>
 </body>
