@@ -26,6 +26,34 @@ TemplateMo 591 villa agency
 https://templatemo.com/tm-591-villa-agency
 
 -->
+<style>
+  /* Estilo para el fondo oscuro al abrir la imagen en grande */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilo para la imagen en grande */
+  .popup-container {
+      max-width: 50%; /* Establece el ancho máximo del popup */
+      max-height: 100%; /* Establece la altura máxima del popup como el 80% de la altura visible */
+    }
+
+    .popup-img {
+      width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+      height: auto; /* Permite que la altura se ajuste automáticamente */
+      border: 2px solid white;
+      border-radius: 5px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+</style>
   </head>
 
 <body>
@@ -85,12 +113,148 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div>
 
+  <div class="overlay" id="overlay" onclick="cerrarPopup()">
+    <div class="popup-container">
+      <img src="" alt="Imagen en grande" class="popup-img" id="img-popup">
+    </div>
+  </div>
+
   <div class="single-property section">
     <div class="container">
-      <div class="row"> 
+      <div class="row">
+        <h2>Mi Amor por ti Siempre Cruzo Fronteras</h2><br><br><br><br>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/1.jpg" alt="">
+            <img src="assets/images/inter01.jpg" alt="" onclick="abrirPopup('assets/images/inter01.jpg')"><br><br>
+            <img src="assets/images/inter03.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')"><br><br>
+            <img src="assets/images/inter07.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/inter02.jpg" alt="" onclick="abrirPopup('assets/images/inter02.jpg')"><br><br>
+            <img src="assets/images/inter08.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')"><br><br>
+            <img src="assets/images/inter12.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/inter05.jpg" alt="" onclick="abrirPopup('assets/images/inter05.jpg')"><br><br>
+            <img src="assets/images/inter04.jpg" alt="" onclick="abrirPopup('assets/images/inter04.jpg')"><br><br>
+            <img src="assets/images/inter10.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')"><br><br>
+            <img src="assets/images/inter13.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')"><br><br>
+            <img src="assets/images/inter14.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/inter06.jpg" alt="" onclick="abrirPopup('assets/images/inter06.jpg')"><br><br>
+            <img src="assets/images/inter11.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')"><br><br>
+            <img src="assets/images/inter09.jpg" alt="" onclick="abrirPopup('assets/images/inter03.jpg')">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="single-property section">
+    <div class="container">
+      <div class="row">
+        <h2>El mar el mejor compañero</h2><br><br><br><br>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/3.jpg" alt=""><br><br>
+            <img src="assets/images/57.jpg" alt="">            
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/4.jpg" alt=""><br><br>
+            <img src="assets/images/58.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/5.jpg" alt=""><br><br>
+            <img src="assets/images/6.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/principal.jpg" alt="">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-property section">
+    <div class="container">
+      <div class="row">
+        <h2>Un lugar de paz y descanso, tu compañia</h2><br><br><br><br>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/31.jpg" alt=""><br><br>
+            <img src="assets/images/11.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/32.jpg" alt=""><br><br>
+            <img src="assets/images/23.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/30.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/12.jpg" alt="">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-property section">
+    <div class="container">
+      <div class="row">
+        <h2>El calor mas hermoso, tus abrazos</h2><br><br><br><br>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/8.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/59.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/49.jpg" alt="">
+          </div> 
+        </div>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/46.jpg" alt="">
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-property section">
+    <div class="container">
+      <div class="row">
+        <h2>Comer se volvio más divertido</h2><br><br><br><br>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/1.jpg" alt=""><br><br>
+            <img src="assets/images/48.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
@@ -100,93 +264,12 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/3.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/4.jpg" alt="">
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="single-property section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/5.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/6.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/7.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/8.jpg" alt="">
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="single-property section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/14.png" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/15.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/16.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/17.jpg" alt="">
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="single-property section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/10.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/11.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
             <img src="assets/images/12.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/13.jpg" alt="">
+            <img src="assets/images/26.jpg" alt="">
           </div> 
         </div>
       </div>
@@ -196,24 +279,40 @@ https://templatemo.com/tm-591-villa-agency
   <div class="single-property section">
     <div class="container">
       <div class="row">
+        <h2>Compañeros de locuras y modelaje</h2><br><br><br><br>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/18.jpg" alt="">
+            <img src="assets/images/45.jpg" alt=""><br><br>
+            <img src="assets/images/17.jpg" alt=""><br><br>
+            <img src="assets/images/39.jpg" alt=""><br><br>
+            <img src="assets/images/33.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/19.jpg" alt="">
+            <img src="assets/images/13.jpg" alt=""><br><br>
+            <img src="assets/images/54.jpg" alt=""><br><br>
+            <img src="assets/images/love.jpg" alt=""><br><br>
+            <img src="assets/images/34.jpg" alt=""><br><br>
+            <img src="assets/images/7.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/20.jpg" alt="">
+            <img src="assets/images/14.png" alt=""><br><br>
+            <img src="assets/images/47.jpg" alt=""><br><br>
+            <img src="assets/images/35.jpg" alt=""><br><br>
+            <img src="assets/images/36.jpg" alt=""><br><br>
+            <img src="assets/images/41.jpg" alt="">
+            
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/21.jpg" alt="">
+            <img src="assets/images/15.jpg" alt=""><br><br>
+            <img src="assets/images/35.jpg" alt=""><br><br>
+            <img src="assets/images/40.jpg" alt=""><br><br>
+            <img src="assets/images/37.jpg" alt="">
           </div> 
         </div>
       </div>
@@ -223,6 +322,12 @@ https://templatemo.com/tm-591-villa-agency
   <div class="single-property section">
     <div class="container">
       <div class="row">
+        <h2>El sabor más adictivo, tus besos</h2><br><br><br><br>
+        <div class="col-lg-3">
+          <div class="main-image">
+            <img src="assets/images/10.jpg" alt="">
+          </div> 
+        </div>
         <div class="col-lg-3">
           <div class="main-image">
             <img src="assets/images/22.jpg" alt="">
@@ -230,12 +335,7 @@ https://templatemo.com/tm-591-villa-agency
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/23.jpg" alt="">
-          </div> 
-        </div>
-        <div class="col-lg-3">
-          <div class="main-image">
-            <img src="assets/images/24.jpg" alt="">
+            <img src="assets/images/42.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
@@ -250,24 +350,25 @@ https://templatemo.com/tm-591-villa-agency
   <div class="single-property section">
     <div class="container">
       <div class="row">
+        <h2>Fotografo oficial de tu hermosa mirada</h2><br><br><br><br>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/26.jpg" alt="">
+            <img src="assets/images/16.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/27.jpg" alt="">
+            <img src="assets/images/22.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/28.mp4" alt="">
+            <img src="assets/images/42.jpg" alt="">
           </div> 
         </div>
         <div class="col-lg-3">
           <div class="main-image">
-            <img src="assets/images/29.jpg" alt="">
+            <img src="assets/images/25.jpg" alt="">
           </div> 
         </div>
       </div>
@@ -283,6 +384,24 @@ https://templatemo.com/tm-591-villa-agency
   </footer>
 
   <!-- Scripts -->
+  <script>
+    function abrirPopup(src) {
+      // Obtener elementos HTML
+      var overlay = document.getElementById('overlay');
+      var imgPopup = document.getElementById('img-popup');
+  
+      // Establecer la fuente de la imagen en grande
+      imgPopup.src = src;
+  
+      // Mostrar el overlay
+      overlay.style.display = 'flex';
+    }
+  
+    function cerrarPopup() {
+      // Ocultar el overlay al hacer clic fuera de la imagen
+      document.getElementById('overlay').style.display = 'none';
+    }
+  </script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
