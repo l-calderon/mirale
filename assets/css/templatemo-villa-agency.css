@@ -876,7 +876,7 @@ Featured Style
 .featured .section-heading {
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .featured .section-heading h2 {
@@ -1399,7 +1399,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  background-image: url(../images/banner-03.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
